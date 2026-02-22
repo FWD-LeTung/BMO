@@ -5,3 +5,9 @@
 # I recreate a real BMO, local AI Agent.
 
 #### Original idea: https://www.youtube.com/watch?v=l5ggH-YhuAw&t=949s. Once again, thanks Brenpoly the author.
+
+# System Design
+## Software
+<p align="center">
+  <img src="docs\Version1\cascade.png" width="200">
+</p>
