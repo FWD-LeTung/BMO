@@ -4,4 +4,4 @@
 
 # I recreate a real BMO, local AI Agent.
 
-#### Original idea: https://www.youtube.com/watch?v=l5ggH-YhuAw&t=949s. Once again, thanks Brenpoly the author
+#### Original idea: https://www.youtube.com/watch?v=l5ggH-YhuAw&t=949s. Once again, thanks Brenpoly the author.
