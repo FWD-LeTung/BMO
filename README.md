@@ -9,5 +9,5 @@
 # System Design
 ## Software
 <p align="center">
-  <img src="docs\Version1\cascade.png" width="800">
+  <img src="docs\Version1\cascade.png" width="600">
 </p>
