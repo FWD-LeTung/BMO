@@ -1,2 +1,7 @@
 llm:
-  name: "deepseek-r1:1.5b"
+  name: "qwen:0.5b"
+
+stt:
+  name: "faster-whisper:tiny.en"
+  compute_type: "int8"
+  sample_rate: 16000

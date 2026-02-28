@@ -2,7 +2,7 @@ import re
 from ollama import chat
 
 class BMOBrain:
-    def __init__(self, model_name: str = "deepseek-r1:1.5b"):
+    def __init__(self, model_name: str = "qwen:0.5b"):
         self.model = model_name
         self.chat_history = []
         self.system_prompt = (
@@ -20,9 +20,16 @@ class BMOBrain:
                 "content": self.system_prompt
             }
         ]
+        self.clear_history()
+    def clear_history(self):
+        self.chat_history = [
+            {
+                "role": "system",
+                "content": self.system_prompt
+            }
+        ]
 
     def preprocess_for_tts(self, text:str) -> str:
-            text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
             text = re.sub(r'[\*\[\(].*?[\*\]\)]', '', text)
             text = re.sub(r'[*_#`~]', '', text)
             text = " ".join(text.split())
@@ -39,7 +46,6 @@ class BMOBrain:
                 messages=self.chat_history,
                 options={
                     "temperature": 0.5,
-                    "num_predict": 100
                 }
                 
             )
@@ -52,5 +58,5 @@ class BMOBrain:
             return "Beep boop! My brain is feeling dizzy right now."
         
 if __name__ == "__main__":
-    bmo = BMOBrain(model_name="deepseek-r1:1.5b")
-    bmo.get_response("Hello BMO, bạn đang làm gì đó?") 
+    bmo = BMOBrain()
+    bmo.get_response("Hello BMO, what are you doing?") 
