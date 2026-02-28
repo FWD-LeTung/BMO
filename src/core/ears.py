@@ -1,6 +1,4 @@
-import os
 import sounddevice as sd
-import numpy as np
 from scipy.io import wavfile
 from faster_whisper import WhisperModel
 
