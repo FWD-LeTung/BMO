@@ -1,17 +1,2 @@
-sensory:
-  device: null
-  sample_rate: 16000
-  channels: 1
-  chunk_duration_ms: 30
-  dtype: "int16"
-  ring_buffer_seconds: 1.2  # lưu 1.2 giây gần nhất (khoảng 40 chunk)
-
 llm:
-  name: "DeepSeek-R1"
-
-wakeword:
-  enabled: true
-  engine: "porcupine"
-  keyword: "hey bmo"  # hoặc đường dẫn file .ppn
-  sensitivity: 0.5
-  model_path: "models/porcupine_params.pv"
+  name: "deepseek-r1:1.5b"
