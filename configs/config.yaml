@@ -6,11 +6,8 @@ sensory:
   dtype: "int16"
   ring_buffer_seconds: 1.2  # lưu 1.2 giây gần nhất (khoảng 40 chunk)
 
-dns:
-  enabled: true
-  method: "deepfilternet"
-  model: "DeepFilterNet2"  # phiên bản model
-  # Các tham số khác nếu cần
+llm:
+  name: "DeepSeek-R1"
 
 wakeword:
   enabled: true
